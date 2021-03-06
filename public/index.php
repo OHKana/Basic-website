@@ -31,6 +31,7 @@ if (file_exists(__DIR__.'/../storage/framework/maintenance.php')) {
 |
 */
 
+
 require __DIR__.'/../vendor/autoload.php';
 
 /*
@@ -53,3 +54,4 @@ $response = tap($kernel->handle(
 ))->send();
 
 $kernel->terminate($request, $response);
+
