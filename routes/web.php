@@ -1,18 +1,28 @@
 <?php
+use App\Http\Controllers\Surveycontroller;
+use App\Http\Controllers\Portfoliocontroller;
+use App\Http\Controllers\Homecontroller;
+use App\Http\Controllers\Markslistcontroller;
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
+
+
+
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('master');
 });
+Route::get('/home',[Homecontroller::class,'list'])->name('home');
+
+Route::get('/survay',[Surveycontroller::class,'list'])->name('survey');
+
+Route::get('/markslist',[Markslistcontroller::class,'list'])->name('markslist');
+
+Route::get('/portfolio',[Portfoliocontroller::class,'list'])->name('portfolio');
+
+
+// Route::get('/', function () {
+//        return view('content.survey');
+//     });
