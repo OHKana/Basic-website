@@ -27,11 +27,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{route('expriences&projects')}}">
                     <span data-feather="users"></span>
                     Expriences & Projecs
                 </a>
             </li>
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{route('category')}}">
+                <span data-feather="users"></span>
+                Category
+            </a>
+        </li>
 
 
         </ul>

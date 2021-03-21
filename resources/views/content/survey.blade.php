@@ -18,6 +18,10 @@
                 <b> Name:</b> <input type="text" name ="textbox1" placeholder="Enter your name" required>
             </p>
 
+            <P align="center">
+                <b> Name:</b> <input type="text" name ="textbox1" placeholder="Enter your name" required>
+            </p>
+
 
             <P align="center">
                 <b> Contact:</b> <input type="text" name ="textbox2" pattern="0-9" placeholder="Enter your Phone Number" required>
